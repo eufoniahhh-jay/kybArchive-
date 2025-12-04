@@ -4,23 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>김용빈 팬 영상 모음</title>
-  <style>
+  <!-- <style>
     body { font-family: Arial, sans-serif; background: #fafafa; margin: 0; padding: 0; }
     header { background: #333; color: white; padding: 20px; text-align: center; }
     h2 { text-align: center; margin-top: 40px; }
-    .category-container { display: flex; justify-content: center; gap: 20px; margin-top: 40px; flex-wrap: wrap; }
-    .category { background: white; border-radius: 10px; padding: 20px; width: 250px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); cursor: pointer; text-align: center; transition: 0.2s; }
+    .category-container { 
+      display: flex; justify-content: center; gap: 20px;
+      margin-top: 40px; flex-wrap: wrap; 
+    }
+    .category { 
+      background: white; border-radius: 10px; padding: 20px; width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15); cursor: pointer; text-align: center;
+      transition: 0.2s;
+    }
     .category:hover { transform: scale(1.05); }
     .video-list { max-width: 800px; margin: 40px auto; display: none; }
     .video-item { margin-bottom: 20px; }
     .back-btn { margin: 20px; display: inline-block; cursor: pointer; color: #007bff; }
-  </style>
+  </style> -->
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* 깃허브 이미지 배경 + 어둡게 처리 */
+    background: 
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+      url("1.jpeg");   /* ← 여기에 GitHub raw 이미지 링크 입력 */
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  header { 
+    background: rgba(0,0,0,0.6); 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+  }
+
+  h2 { 
+    text-align: center; 
+    margin-top: 40px; 
+    color: white;
+  }
+
+  .category-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 40px; 
+    flex-wrap: wrap; 
+  }
+
+  .category { 
+    background: rgba(255,255,255,0.85); 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 250px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+    cursor: pointer; 
+    text-align: center; 
+    transition: 0.2s; 
+  }
+
+  .category:hover { transform: scale(1.05); }
+
+  .video-list { 
+    max-width: 800px; 
+    margin: 40px auto; 
+    display: none; 
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .video-item { margin-bottom: 20px; }
+
+  .back-btn { 
+    margin: 20px; 
+    display: inline-block; 
+    cursor: pointer; 
+    color: #00a2ff; 
+    font-weight: bold;
+  }
+
+  h3 { color: #333; }
+</style>
 </head>
 <body>
   <header><h1>김용빈 영상 아카이브</h1></header>
 
+  <!-- 홈 화면 -->
   <section id="home">
     <h2>카테고리를 선택하세요</h2>
+
     <div class="category-container">
       <div class="category" onclick="openCategory('mt3')">미스터트롯3 무대</div>
       <div class="category" onclick="openCategory('colcenter')">사랑의 콜센터 무대</div>
@@ -28,7 +108,7 @@
     </div>
   </section>
 
-  <!-- 카테고리별 리스트 영역 -->
+  <!-- 미스터트롯3 -->
   <section id="mt3" class="video-list">
     <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
     <h2>미스터트롯3 무대</h2>
@@ -90,24 +170,82 @@
     </div>
   </section>
 
+
+  <!-- 사랑의 콜센터 -->
   <section id="colcenter" class="video-list">
     <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
     <h2>사랑의 콜센터 무대</h2>
-    <div class="video-item">
-      <h3>날짜/회차 - 노래 제목</h3>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
 
+    <div class="video-item"><h3>상사화 - 사랑의 콜센타 1화</h3><a href="https://youtu.be/OlgrCX3wHe0" target="_blank"><img src="https://img.youtube.com/vi/OlgrCX3wHe0/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>청포도 사랑 - 사랑의 콜센타 1화</h3><a href="https://youtu.be/vrSFZBlqcLI" target="_blank"><img src="https://img.youtube.com/vi/vrSFZBlqcLI/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아씨 - 사랑의 콜센타 2화</h3><a href="https://youtu.be/-EQmTQMb2SE" target="_blank"><img src="https://img.youtube.com/vi/-EQmTQMb2SE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>어머니의 계절 - 사랑의 콜센타 2화</h3><a href="https://youtu.be/2n-yas209AM" target="_blank"><img src="https://img.youtube.com/vi/2n-yas209AM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>월량대표아적심 - 사랑의 콜센타 2화</h3><a href="https://youtu.be/i2q_lUBi9Hw" target="_blank"><img src="https://img.youtube.com/vi/i2q_lUBi9Hw/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>노래는 나의 인생 - 사랑의 콜센타 3화</h3><a href="https://youtu.be/4Su8IlvSrOU" target="_blank"><img src="https://img.youtube.com/vi/4Su8IlvSrOU/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>열아홉 순정 - 사랑의 콜센타 3화</h3><a href="https://youtu.be/7JHuN4rg3q0" target="_blank"><img src="https://img.youtube.com/vi/7JHuN4rg3q0/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>사랑의 미로 - 사랑의 콜센타 4화</h3><a href="https://youtu.be/H3OFRcf6brE" target="_blank"><img src="https://img.youtube.com/vi/H3OFRcf6brE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>환희 - 사랑의 콜센타 4화</h3><a href="https://youtu.be/me-h1XqeP7I" target="_blank"><img src="https://img.youtube.com/vi/me-h1XqeP7I/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>님과 함께 - 사랑의 콜센타 5화</h3><a href="https://youtu.be/pNNPfDGkHTA" target="_blank"><img src="https://img.youtube.com/vi/pNNPfDGkHTA/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>청춘을 돌려다오 - 사랑의 콜센타 5화</h3><a href="https://youtu.be/8zqdcLHs9nM" target="_blank"><img src="https://img.youtube.com/vi/8zqdcLHs9nM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아내에게 바치는 노래 - 사랑의 콜센타 6화</h3><a href="https://youtu.be/5aYnv1o80nI" target="_blank"><img src="https://img.youtube.com/vi/5aYnv1o80nI/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>여러분 - 사랑의 콜센타 7화</h3><a href="https://youtu.be/IavJa_27TjM" target="_blank"><img src="https://img.youtube.com/vi/IavJa_27TjM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>때 - 사랑의 콜센타 7화</h3><a href="https://youtu.be/mOaQUb_5SeM" target="_blank"><img src="https://img.youtube.com/vi/mOaQUb_5SeM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>무심세월 - 사랑의 콜센타 8화</h3><a href="https://youtu.be/HboqmxmYaqY" target="_blank"><img src="https://img.youtube.com/vi/HboqmxmYaqY/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>일나겠네 - 사랑의 콜센타 8화</h3><a href="https://youtu.be/TfqeqPNTTlM" target="_blank"><img src="https://img.youtube.com/vi/TfqeqPNTTlM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>사랑은 창밖에 빗물 같아요 - 사랑의 콜센타 9화</h3><a href="https://youtu.be/RlCrcgdChH8" target="_blank"><img src="https://img.youtube.com/vi/RlCrcgdChH8/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>당신은 모르실거야 - 사랑의 콜센타 10화</h3><a href="https://youtu.be/HDgYxY3CxfY" target="_blank"><img src="https://img.youtube.com/vi/HDgYxY3CxfY/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>첫 만남은 계획대로 되지 않아 - 사랑의 콜센타 10화</h3><a href="https://youtu.be/zRrvRa940oM" target="_blank"><img src="https://img.youtube.com/vi/zRrvRa940oM/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>담다디 - 사랑의 콜센타 10화</h3><a href="https://youtu.be/vOwpXCrOIaQ" target="_blank"><img src="https://img.youtube.com/vi/vOwpXCrOIaQ/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>이별의 부산 정거장 - 사랑의 콜센타 11화</h3><a href="https://youtu.be/zhQJXK1vkWE" target="_blank"><img src="https://img.youtube.com/vi/zhQJXK1vkWE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>찻잔의 이별 - 사랑의 콜센타 11화</h3><a href="https://youtu.be/2aI5ekBwwBo" target="_blank"><img src="https://img.youtube.com/vi/2aI5ekBwwBo/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>어제도 너였고 오늘도 너여서 - 사랑의 콜센타 12화</h3><a href="https://youtu.be/3aY6sFS6EQE" target="_blank"><img src="https://img.youtube.com/vi/3aY6sFS6EQE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>엄마가 딸에게 - 사랑의 콜센타 12화</h3><a href="https://youtu.be/PqullcAkJ30" target="_blank"><img src="https://img.youtube.com/vi/PqullcAkJ30/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아리랑 목동 - 사랑의 콜센타 13화</h3><a href="https://youtu.be/tcrWkr7SVgA" target="_blank"><img src="https://img.youtube.com/vi/tcrWkr7SVgA/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아모르 파티 - 사랑의 콜센타 13화</h3><a href="https://youtu.be/oNp3BYLPlW8" target="_blank"><img src="https://img.youtube.com/vi/oNp3BYLPlW8/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>나팔바지 - 사랑의 콜센타 13화</h3><a href="https://youtu.be/js8WKwnHIUU" target="_blank"><img src="https://img.youtube.com/vi/js8WKwnHIUU/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아파트 - 사랑의 콜센타 14화</h3><a href="https://youtu.be/ewI0nIJnGjE" target="_blank"><img src="https://img.youtube.com/vi/ewI0nIJnGjE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>비나리 - 사랑의 콜센타 15화</h3><a href="https://youtu.be/0SaBfO9OUq4" target="_blank"><img src="https://img.youtube.com/vi/0SaBfO9OUq4/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>동백 아가씨 - 사랑의 콜센타 15화</h3><a href="https://youtu.be/gUbbTE0uitY" target="_blank"><img src="https://img.youtube.com/vi/gUbbTE0uitY/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>서울탱고 - 사랑의 콜센타 16화</h3><a href="https://youtu.be/9dUyY8EGVuU" target="_blank"><img src="https://img.youtube.com/vi/9dUyY8EGVuU/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>유혹 - 사랑의 콜센타 16화</h3><a href="https://youtu.be/MHOZc3rg6uA" target="_blank"><img src="https://img.youtube.com/vi/MHOZc3rg6uA/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>개여울 - 사랑의 콜센타 17화</h3><a href="https://youtu.be/-VYgwEaFxag" target="_blank"><img src="https://img.youtube.com/vi/-VYgwEaFxag/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아담과 이브처럼 - 사랑의 콜센타 17화</h3><a href="https://youtu.be/tl0z46QdjRY" target="_blank"><img src="https://img.youtube.com/vi/tl0z46QdjRY/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>미운사랑 - 사랑의 콜센타 18화</h3><a href="https://youtu.be/DgNh7at0zAc" target="_blank"><img src="https://img.youtube.com/vi/DgNh7at0zAc/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>빠이빠이 - 사랑의 콜센타 18화</h3><a href="https://youtu.be/vde8tgbLr10" target="_blank"><img src="https://img.youtube.com/vi/vde8tgbLr10/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>해틀날 - 사랑의 콜센타 19화</h3><a href="https://youtu.be/0KmEwNzJxnA" target="_blank"><img src="https://img.youtube.com/vi/0KmEwNzJxnA/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>아파요 - 사랑의 콜센타 19화</h3><a href="https://youtu.be/aqB9XTCAN74" target="_blank"><img src="https://img.youtube.com/vi/aqB9XTCAN74/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>영영 - 사랑의 콜센타 20화</h3><a href="https://youtu.be/Z6td3eyn1yI" target="_blank"><img src="https://img.youtube.com/vi/Z6td3eyn1yI/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>연포 아가씨 - 사랑의 콜센타 21화</h3><a href="https://youtu.be/4Q3ldZm-c7U" target="_blank"><img src="https://img.youtube.com/vi/4Q3ldZm-c7U/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>이별 - 사랑의 콜센타 21화</h3><a href="https://youtu.be/tFkIX37HKHY" target="_blank"><img src="https://img.youtube.com/vi/tFkIX37HKHY/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>서귀포를 아시나요 - 사랑의 콜센타 22화</h3><a href="https://youtu.be/kU9qoosXC8A" target="_blank"><img src="https://img.youtube.com/vi/kU9qoosXC8A/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>고향역 - 사랑의 콜센타 22화</h3><a href="https://youtu.be/aA-QJsGkF5k" target="_blank"><img src="https://img.youtube.com/vi/aA-QJsGkF5k/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>한가위 메들리 - 사랑의 콜센타 22화</h3><a href="https://youtu.be/MWtkBu0P8Lw" target="_blank"><img src="https://img.youtube.com/vi/MWtkBu0P8Lw/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>누가 울어 - 사랑의 콜센타 23화</h3><a href="https://youtu.be/QbnrjrzgvaE" target="_blank"><img src="https://img.youtube.com/vi/QbnrjrzgvaE/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>옛사랑 - 사랑의 콜센타 23화</h3><a href="https://youtu.be/Po0OZd2xLSw" target="_blank"><img src="https://img.youtube.com/vi/Po0OZd2xLSw/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>홍도야 우지마라 - 사랑의 콜센타 24화</h3><a href="https://youtu.be/F40ZLbEqScs" target="_blank"><img src="https://img.youtube.com/vi/F40ZLbEqScs/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>가을을 남기고 간 사랑 - 사랑의 콜센타 25화</h3><a href="https://youtu.be/LmrWZFt2nFs" target="_blank"><img src="https://img.youtube.com/vi/LmrWZFt2nFs/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>길 - 사랑의 콜센타 26화</h3><a href="https://youtu.be/4QyaEaD6AZw" target="_blank"><img src="https://img.youtube.com/vi/4QyaEaD6AZw/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>전선야곡 - 사랑의 콜센타 27화</h3><a href="https://youtu.be/T5izyo0uY7M" target="_blank"><img src="https://img.youtube.com/vi/T5izyo0uY7M/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>당신은 어디 있나요 - 사랑의 콜센타 27화</h3><a href="https://youtu.be/ymPegdaOxzI" target="_blank"><img src="https://img.youtube.com/vi/ymPegdaOxzI/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>사랑 그 쓸쓸함에 대하여 - 사랑의 콜센타 28화</h3><a href="https://youtu.be/wUHsCh6Z294" target="_blank"><img src="https://img.youtube.com/vi/wUHsCh6Z294/hqdefault.jpg" width="100%"></a></div>
+    <div class="video-item"><h3>내 삶에 이유 있음은 - 사랑의 콜센타 29화</h3><a href="https://youtu.be/wsKET0uDhTc" target="_blank"><img src="https://img.youtube.com/vi/wsKET0uDhTc/hqdefault.jpg" width="100%"></a></div>
+
+  </section> <!-- 🔥 이 closing이 반드시 필요함 -->
+
+
+  <!-- 공연 무대 -->
   <section id="concert" class="video-list">
     <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
     <h2>공연 무대 모음</h2>
+
     <div class="video-item">
       <h3>행사명 - 날짜</h3>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
+
+  <!-- 스크립트 -->
   <script>
     function openCategory(id) {
       document.getElementById('home').style.display = 'none';
@@ -119,5 +257,6 @@
       document.getElementById('home').style.display = 'block';
     }
   </script>
+
 </body>
 </html>
