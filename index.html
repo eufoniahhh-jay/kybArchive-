@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김용빈 팬 영상 모음</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fafafa; margin: 0; padding: 0; }
+    header { background: #333; color: white; padding: 20px; text-align: center; }
+    h2 { text-align: center; margin-top: 40px; }
+    .category-container { display: flex; justify-content: center; gap: 20px; margin-top: 40px; flex-wrap: wrap; }
+    .category { background: white; border-radius: 10px; padding: 20px; width: 250px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); cursor: pointer; text-align: center; transition: 0.2s; }
+    .category:hover { transform: scale(1.05); }
+    .video-list { max-width: 800px; margin: 40px auto; display: none; }
+    .video-item { margin-bottom: 20px; }
+    .back-btn { margin: 20px; display: inline-block; cursor: pointer; color: #007bff; }
+  </style>
+</head>
+<body>
+  <header><h1>김용빈 영상 아카이브</h1></header>
+
+  <section id="home">
+    <h2>카테고리를 선택하세요</h2>
+    <div class="category-container">
+      <div class="category" onclick="openCategory('mt3')">미스터트롯3 무대</div>
+      <div class="category" onclick="openCategory('colcenter')">사랑의 콜센터 무대</div>
+      <div class="category" onclick="openCategory('concert')">공연 무대 모음</div>
+    </div>
+  </section>
+
+  <!-- 카테고리별 리스트 영역 -->
+  <section id="mt3" class="video-list">
+    <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
+    <h2>미스터트롯3 무대</h2>
+
+    <div class="video-item">
+      <h3>애인 - 현역부 A조 예선전</h3>
+      <a href="https://youtu.be/wCIo2pIZtvg" target="_blank">
+        <img src="https://img.youtube.com/vi/wCIo2pIZtvg/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>꿈속의 사랑 - 장르별 팀 배틀 현역부 2조</h3>
+      <a href="https://youtu.be/NVigC4mU_ZI" target="_blank">
+        <img src="https://img.youtube.com/vi/NVigC4mU_ZI/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>이별 - 1:1 데스매치</h3>
+      <a href="https://youtu.be/X3dIzLIlwhc" target="_blank">
+        <img src="https://img.youtube.com/vi/X3dIzLIlwhc/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>연인 - 메들리 팀미션-대장전</h3>
+      <a href="https://youtu.be/9wYWh1sIv80" target="_blank">
+        <img src="https://img.youtube.com/vi/9wYWh1sIv80/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>내가 바보야 - 준결승 1차전 1라운드</h3>
+      <a href="https://youtu.be/RSKgB8O_oW0" target="_blank">
+        <img src="https://img.youtube.com/vi/RSKgB8O_oW0/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>앉으나 서나 당신 생각 - 준결승 1차전 2라운드</h3>
+      <a href="https://youtu.be/Bj5jMmm5ELA" target="_blank">
+        <img src="https://img.youtube.com/vi/Bj5jMmm5ELA/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>타향살이 - 준결승 2차전 2라운드</h3>
+      <a href="https://youtu.be/t-JKPx9pGQY" target="_blank">
+        <img src="https://img.youtube.com/vi/t-JKPx9pGQY/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+
+    <div class="video-item">
+      <h3>감사 - 결승전</h3>
+      <a href="https://youtu.be/rAVP4PVft5M" target="_blank">
+        <img src="https://img.youtube.com/vi/rAVP4PVft5M/hqdefault.jpg" width="100%">
+      </a>
+    </div>
+  </section>
+
+  <section id="colcenter" class="video-list">
+    <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
+    <h2>사랑의 콜센터 무대</h2>
+    <div class="video-item">
+      <h3>날짜/회차 - 노래 제목</h3>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="concert" class="video-list">
+    <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
+    <h2>공연 무대 모음</h2>
+    <div class="video-item">
+      <h3>행사명 - 날짜</h3>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <script>
+    function openCategory(id) {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function goHome() {
+      document.querySelectorAll('.video-list').forEach(v => v.style.display = 'none');
+      document.getElementById('home').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
