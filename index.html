@@ -4,95 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>김용빈 팬 영상 모음</title>
-  <!-- <style>
-    body { font-family: Arial, sans-serif; background: #fafafa; margin: 0; padding: 0; }
-    header { background: #333; color: white; padding: 20px; text-align: center; }
-    h2 { text-align: center; margin-top: 40px; }
-    .category-container { 
-      display: flex; justify-content: center; gap: 20px;
-      margin-top: 40px; flex-wrap: wrap; 
-    }
-    .category { 
-      background: white; border-radius: 10px; padding: 20px; width: 250px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15); cursor: pointer; text-align: center;
-      transition: 0.2s;
-    }
-    .category:hover { transform: scale(1.05); }
-    .video-list { max-width: 800px; margin: 40px auto; display: none; }
-    .video-item { margin-bottom: 20px; }
-    .back-btn { margin: 20px; display: inline-block; cursor: pointer; color: #007bff; }
-  </style> -->
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 
-    /* 깃허브 이미지 배경 + 어둡게 처리 */
-    background: 
-      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
-      url("1.jpeg");   /* ← 여기에 GitHub raw 이미지 링크 입력 */
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-
-  header { 
-    background: rgba(0,0,0,0.6); 
-    color: white; 
-    padding: 20px; 
-    text-align: center; 
-  }
-
-  h2 { 
-    text-align: center; 
-    margin-top: 40px; 
-    color: white;
-  }
-
-  .category-container { 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 40px; 
-    flex-wrap: wrap; 
-  }
-
-  .category { 
-    background: rgba(255,255,255,0.85); 
-    border-radius: 10px; 
-    padding: 20px; 
-    width: 250px; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
-    cursor: pointer; 
-    text-align: center; 
-    transition: 0.2s; 
-  }
-
-  .category:hover { transform: scale(1.05); }
-
-  .video-list { 
-    max-width: 800px; 
-    margin: 40px auto; 
-    display: none; 
-    background: rgba(255,255,255,0.85);
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .video-item { margin-bottom: 20px; }
-
-  .back-btn { 
-    margin: 20px; 
-    display: inline-block; 
-    cursor: pointer; 
-    color: #00a2ff; 
-    font-weight: bold;
-  }
-
-  h3 { color: #333; }
-</style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header><h1>김용빈 영상 아카이브</h1></header>
@@ -230,7 +143,7 @@
     <div class="video-item"><h3>사랑 그 쓸쓸함에 대하여 - 사랑의 콜센타 28화</h3><a href="https://youtu.be/wUHsCh6Z294" target="_blank"><img src="https://img.youtube.com/vi/wUHsCh6Z294/hqdefault.jpg" width="100%"></a></div>
     <div class="video-item"><h3>내 삶에 이유 있음은 - 사랑의 콜센타 29화</h3><a href="https://youtu.be/wsKET0uDhTc" target="_blank"><img src="https://img.youtube.com/vi/wsKET0uDhTc/hqdefault.jpg" width="100%"></a></div>
 
-  </section> <!-- 🔥 이 closing이 반드시 필요함 -->
+  </section> 
 
 
   <!-- 공연 무대 -->
@@ -238,25 +151,70 @@
     <span class="back-btn" onclick="goHome()">← 뒤로가기</span>
     <h2>공연 무대 모음</h2>
 
-    <div class="video-item">
-      <h3>행사명 - 날짜</h3>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/영상ID" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <div class="video-item"><h3>25년 6월 7일 전국 TOP 가요쇼 생거진천농다리축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/g7J4rvOgB4A" target="_blank"><img src="https://img.youtube.com/vi/g7J4rvOgB4A/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 6월 8일 K-트로트 페스티벌 대구 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/pOMlGCHpsao" target="_blank"><img src="https://img.youtube.com/vi/pOMlGCHpsao/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 6월 11일 음성 품바 축제 (출처 TV신호등, @TV신호등)</h3><a href="https://youtu.be/kLAa04lCWF4" target="_blank"><img src="https://img.youtube.com/vi/kLAa04lCWF4/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 6월 12일 충주 다이브 축제 (출처 TV신호등, @TV신호등)</h3><a href="https://youtu.be/j7cCDVe1mBk" target="_blank"><img src="https://img.youtube.com/vi/j7cCDVe1mBk/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 7월 16일 한경협 경영자 제주 하계 포럼-1 (출처 #사나이TV, @golf_driverswing)</h3><a href="https://youtu.be/Excl93_Beng" target="_blank"><img src="https://img.youtube.com/vi/Excl93_Beng/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 7월 16일 한경협 경영자 제주 하계 포럼-2 (출처 #사나이TV, @golf_driverswing)</h3><a href="https://youtu.be/7XyvmD5zUdc" target="_blank"><img src="https://img.youtube.com/vi/7XyvmD5zUdc/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 7월 22일 삼성화재 행사 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/gsV39UrXVdM" target="_blank"><img src="https://img.youtube.com/vi/gsV39UrXVdM/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 7월 25일 울산 현대자동차 행사 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/v5WTvRL1jfw" target="_blank"><img src="https://img.youtube.com/vi/v5WTvRL1jfw/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 1일 향수 옥천 포도 복숭아 축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/Gj2MhFSRMsk" target="_blank"><img src="https://img.youtube.com/vi/Gj2MhFSRMsk/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 3일 부산 제21회 현인 가요제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/aFw-451As3Y" target="_blank"><img src="https://img.youtube.com/vi/aFw-451As3Y/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 8일 장성 썸머 뮤직 페스타 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/cnx0WK5Ojh0" target="_blank"><img src="https://img.youtube.com/vi/cnx0WK5Ojh0/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 9일 통영 한산대첩 축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/5t3-OmR6rEw" target="_blank"><img src="https://img.youtube.com/vi/5t3-OmR6rEw/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 10일 보령 머드축제 폐막 공연 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/GzVhBb5g2-Y" target="_blank"><img src="https://img.youtube.com/vi/GzVhBb5g2-Y/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 8월 15일 제80회 광복절 경축 음악회 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/nSuBUcUE_UE" target="_blank"><img src="https://img.youtube.com/vi/nSuBUcUE_UE/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 5일 충북 괴산 고추 축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/OmqJXlIhOis" target="_blank"><img src="https://img.youtube.com/vi/OmqJXlIhOis/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 5일 보은 열린콘서트 빅쇼 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/y_zzdjwWJjE" target="_blank"><img src="https://img.youtube.com/vi/y_zzdjwWJjE/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 12일 전북 도민체전 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/SHZYqO9QNbM" target="_blank"><img src="https://img.youtube.com/vi/SHZYqO9QNbM/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 13일 당진 아마존 워터 트롯 페스티벌 (출처 여행을 그려요, @drawatrip)</h3><a href="https://youtu.be/IIxX8--lEJ4" target="_blank"><img src="https://img.youtube.com/vi/IIxX8--lEJ4/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 19일 의성 군민 열린음악회 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/C88NlsnMq_I" target="_blank"><img src="https://img.youtube.com/vi/C88NlsnMq_I/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 22일 함양 산삼 축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/yJTd4fBIxJo" target="_blank"><img src="https://img.youtube.com/vi/yJTd4fBIxJo/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 24일 청원 생명축제 (출처 Rock Music, @RockMusic2015)</h3><a href="https://youtu.be/nsIDUULtvDw" target="_blank"><img src="https://img.youtube.com/vi/nsIDUULtvDw/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 26일 상주 세계 모자 페스티벌 (출처 여행을 그려요, @drawatrip)</h3><a href="https://youtu.be/_SQKfsrHMCY" target="_blank"><img src="https://img.youtube.com/vi/_SQKfsrHMCY/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 27일 거제 시민의 날 (출처 한마음영상tv, @hanmaeumvideo)</h3><a href="https://youtu.be/WfQ6sfdJivI" target="_blank"><img src="https://img.youtube.com/vi/WfQ6sfdJivI/hqdefault.jpg" width="100%"></a></div>
+
+    <div class="video-item"><h3>25년 9월 28일 은해사 은빛 음악회 (출처 한마음영상tv, @hanmaeumvideo)</h3><a href="https://youtu.be/9xumNyxe0Bk" target="_blank"><img src="https://img.youtube.com/vi/9xumNyxe0Bk/hqdefault.jpg" width="100%"></a></div>
+
+
   </section>
 
+  <footer class="site-footer">
+  <p>
+    본 사이트는 비영리 개인 아카이브이며, 어떠한 수익도 창출하지 않습니다.<br>
+    모든 영상의 저작권은 원저작자 및 유튜브에 있으며, 본 사이트는 영상 파일을 직접 제공하지 않고
+    유튜브 링크로만 연결합니다.
+  </p>
+  <p class="footer-meta">
+    제작: 세레나데 · 최근 갱신일: 25.12.18
+  </p>
+  </footer>
 
   <!-- 스크립트 -->
-  <script>
-    function openCategory(id) {
-      document.getElementById('home').style.display = 'none';
-      document.getElementById(id).style.display = 'block';
-    }
-
-    function goHome() {
-      document.querySelectorAll('.video-list').forEach(v => v.style.display = 'none');
-      document.getElementById('home').style.display = 'block';
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
